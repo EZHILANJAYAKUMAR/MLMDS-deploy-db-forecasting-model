@@ -113,10 +113,10 @@ if __name__ == "__main__":
             # Download CSV file if the forecast button is pressed
             if forecast_btn:
                 csv_file = make_predictions(product_ids, horizon)
-                st.write(csv_file)
-                # st.download_button(
-                #     label="Download Prediction",
-                #     data=csv_file,
-                #     file_name="prediction.csv",
-                #     mime="text/csv"
-                # )
+                # st.write(csv_file)
+                st.download_button(
+                    label="Download Prediction",
+                    data=csv_file,
+                    file_name="prediction.csv",
+                    mime="text/csv"
+                )
